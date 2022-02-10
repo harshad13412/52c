@@ -1,0 +1,73 @@
+
+h2 {color: red ;
+    animation:changeposition 4s forwards ;
+    position: relative;
+
+}
+ 
+@keyframes changeposition {
+50% {left: 0px; }
+100%{left: 500px ;}
+
+}
+
+.header {
+background-color: rgb(18, 219, 219);
+animation: changecolour 2s infinite ;
+display: flex;
+justify-content: space-between;
+position: relative;
+}
+@keyframes changecolour {
+0%{background-color: beige;}
+25%{background-color: blanchedalmond;}
+50%{background-color: rgba(37, 209, 209, 0.281);}
+75%{background-color: blue;}
+100%{background-color: greenyellow;}
+    
+}
+.imp {
+    margin: 30px;
+
+
+}
+.imp a {
+    margin-left: 20px;
+}
+
+a:visited {
+    color: aqua;
+}
+
+a:link {
+    color: aqua;
+}
+
+.games {
+display:flex;
+justify-content: space-between;
+}
+.footer {
+    display: flex;
+    justify-content: flex-end;
+}
+.item {
+    position:relative;
+}
+.item p {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    opacity:0
+}
+.item:hover p {
+    opacity: 1;
+
+}
+.item a {
+    opacity: 1;
+}
+.item:hover a {
+    opacity: 0.1 ;
+}
